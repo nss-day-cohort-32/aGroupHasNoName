@@ -50,10 +50,10 @@ parkResultsFactory = (parkFeature, parkResultsCounter) => {
   const location = JSON.parse(parkFeature.mapped_location.human_address);
   return ` 
   <div class="returnedParkSearch">
-  <section>${parkResultsCounter}. </section>
-  <section class="parkResulToSave">${parkFeature.park_name}: ${location.address}
-  </section>
+  <section>${parkResultsCounter}. <span class="parkResulToSave">
+  ${parkFeature.park_name}: ${location.address}</span> 
   <button type="button" class="saveParkSearchBtn">Save Park</button>
+  </section>
   </div>
   `;
 };
@@ -66,7 +66,7 @@ parkResultsToDOM = parkResultsAsHTML => {
 
 //selects element to print SAVED ITINERARY to html
 parkSaveToDOM = (event) => {
-  //current button that is selected from results Factory
+  //current selection from menu that is selected from resultsFactory
   let parkCurrentButton = event.currentTarget;
   //container that the current button is housed in (Returned Park Search)
   let parkButtonContainer = parkCurrentButton.parentNode;
