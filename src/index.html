@@ -14,14 +14,18 @@
         <!-- beggining search container div -->
         <div id="searchContainer">
             <div id="parkFeatures">
-                <label>Activity</label>
+                <label>Parks</label>
                 <select id="parkSelectionMenu">
                     <option value="none"></option>
-                    <option value="walk-jog">Walking/Joggin Trails</option>
-                    <option value="hike">Hiking Trails</option>
-                    <option value="bike">Mountian Bike Trails</option>
-                    <option value="camp">Camping</option>
+                    <option value="ada_accessible">ADA Accessible</option>
+                    <option value="camping_available_by_permit>Camping">Camping</option>
+                    <option value="dog_park">Dog Park</option>
+                    <option value="hiking_trails">Hiking Trails</option>
+                    <option value="historic_features">Historic Features</option>
+                    <option value="lake">Lake</option>
+                    <option value="mountain_bike_trails">Mountian Bike Trails</option>
                     <option value="playground">Playground</option>
+                    <option value="walk_jog_paths">Walking/Jogging Trails</option>
                 </select>
                 <button type="button" id="parkSearchBtn">Search Parks</button>
             </div>
@@ -88,7 +92,8 @@
         </div>
         <!-- beggining itinerary div -->
         <script src="scripts/apiTokens.js"></script>
-        <script src="scripts/meetupApi.js"></script>
+        <script src="scripts/parkAPI.js"></script>
+        <!-- <script src="scripts/meetupApi.js"></script> -->
         <script src="scripts/main.js"></script>
     </body>
     </html>
