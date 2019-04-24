@@ -1,90 +1,102 @@
 <!DOCTYPE html>
 <html>
 
-<!-- beggining search container div -->
-<div id="searchContainer">
-    <div id="parkFeatures">
-        <label>Parks</label>
-        <select id="parkSelectionMenu">
-            <option value="none"></option>
-            <option value="ada_accessible">ADA Accessible</option>
-            <option value="camping_available_by_permit">Camping</option>
-            <option value="dog_park">Dog Park</option>
-            <option value="hiking_trails">Hiking Trails</option>
-            <option value="historic_features">Historic Features</option>
-            <option value="lake">Lake</option>
-            <option value="mountain_bike_trails">Mountian Bike Trails</option>
-            <option value="playground">Playground</option>
-            <option value="walk_jog_paths">Walking/Jogging Trails</option>
-        </select>
-        <button type="button" id="parkSearchBtn">Search Parks</button>
-    </div>
-    <div id="concertFeatures">
-        <label>Concerts</label>
-        <select id="concertSelectionMenu"></select>
-        <button type="button" id="concertSearchBtn">Search Concerts</button>
-    </div>
-    <div id="restaurantFeatures">
-        <label>Restaurants</label>
-        <select id="restaurantSelectionMenu"></select>
-        <button type="button" id="restaurantSearchBtn">Search Concerts</button>
-    </div>
-    <div id="meetupFeatures">
-        <label>Meetups</label>
-        <select id="meetupSelectionMenu">
-            <option value="none"></option>
-            <option value="103">Music</option>
-            <option value="110">Food & Drink</option>
-            <option value="113">Community & Culture</option>
-            <option value="105">Performing & Visual Arts</option>
-            <option value="104">Film, Media & entertainment</option>
-            <option value="108">Sports & Fitness</option>
-            <option value="107">Health & Wellness</option>
-            <option value="102">Science & Technology</option>
-            <option value="109">Travel & Outdoor</option>
-            <option value="111">Charity & Causes</option>
-            <option value="115">Family & Education</option>
-            <option value="116">Seasonal & Holiday</option>
-            <option value="106">Fashion & Beauty</option>
-            <option value="117">Home & Lifestyle</option>
-            <option value="118">Auto, Boat & Air</option>
-            <option value="119">Hobbies and Special Interest</option>
-        </select>
-        <button type="button" id="meetupSearchBtn">Search Concerts</button>
-    </div>
-</div>
-</div>
-<!-- ending search container div -->
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Welcome to Nashville</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
 
-<div id="resultsSection">
-    <h1>Search Results</h1>
-    <!-- beggining search results div -->
-    <div id="resultsContainer">
+<body>
+    <h1>Welcome to Nashville</h1>
+    <h2>Search for things todo......</h2>
 
+    <!-- beggining search container div -->
+    <div id="searchContainer">
+        <div id="parkFeatures">
+            <label>Parks</label>
+            <select id="parkSelectionMenu">
+                <option value="none"></option>
+                <option value="ada_accessible">ADA Accessible</option>
+                <option value="camping_available_by_permit">Camping</option>
+                <option value="dog_park">Dog Park</option>
+                <option value="hiking_trails">Hiking Trails</option>
+                <option value="historic_features">Historic Features</option>
+                <option value="lake">Lake</option>
+                <option value="mountain_bike_trails">Mountian Bike Trails</option>
+                <option value="playground">Playground</option>
+                <option value="walk_jog_paths">Walking/Jogging Trails</option>
+            </select>
+            <button type="button" id="parkSearchBtn">Search Parks</button>
+        </div>
+        <div id="concertFeatures">
+            <label>Concerts</label>
+            <select id="concertSelectionMenu"></select>
+            <button type="button" id="concertSearchBtn">Search Concerts</button>
+        </div>
+        <div id="restaurantFeatures">
+            <label>Restaurants</label>
+            <select id="restaurantSelectionMenu"></select>
+            <button type="button" id="restaurantSearchBtn">Search Concerts</button>
+        </div>
+        <div id="meetupFeatures">
+            <label>Meetups</label>
+            <select id="meetupSelectionMenu">
+                <option value="none"></option>
+                <option value="103">Music</option>
+                <option value="110">Food & Drink</option>
+                <option value="113">Community & Culture</option>
+                <option value="105">Performing & Visual Arts</option>
+                <option value="104">Film, Media & entertainment</option>
+                <option value="108">Sports & Fitness</option>
+                <option value="107">Health & Wellness</option>
+                <option value="102">Science & Technology</option>
+                <option value="109">Travel & Outdoor</option>
+                <option value="111">Charity & Causes</option>
+                <option value="115">Family & Education</option>
+                <option value="116">Seasonal & Holiday</option>
+                <option value="106">Fashion & Beauty</option>
+                <option value="117">Home & Lifestyle</option>
+                <option value="118">Auto, Boat & Air</option>
+                <option value="119">Hobbies and Special Interest</option>
+            </select>
+            <button type="button" id="meetupSearchBtn">Search Concerts</button>
+        </div>
     </div>
-</div>
-<!-- ending seach results div -->
-
-<!-- beggining itinerary div -->
-<div id="itineraryContainer">
-    <h1>Itinerary</h1>
-    <div id="parkItinerary">
-
     </div>
-    <div id="concertItinerary">
+    <!-- ending search container div -->
 
-    </div>
-    <div id="restaurantItinerary">
+    <div id="resultsSection">
+        <h1>Search Results</h1>
+        <!-- beggining search results div -->
+        <div id="resultsContainer">
 
+        </div>
     </div>
-    <div id="meetupItinerary">
+    <!-- ending seach results div -->
 
-    </div>
     <!-- beggining itinerary div -->
-    <script src="scripts/apiTokens.js"></script>
-    <script src="scripts/parkAPI.js"></script>
-    <script src="scripts/meetupApi.js"></script>
-    <script src="scripts/main.js"></script>
-    </body>
+    <div id="itineraryContainer">
+        <h1>Itinerary</h1>
+        <div id="parkItinerary">
+
+        </div>
+        <div id="concertItinerary">
+
+        </div>
+        <div id="restaurantItinerary">
+
+        </div>
+        <div id="meetupItinerary">
+
+        </div>
+        <!-- beggining itinerary div -->
+        <script src="scripts/apiTokens.js"></script>
+        <script src="scripts/parkAPI.js"></script>
+        <script src="scripts/meetupApi.js"></script>
+        <script src="scripts/main.js"></script>
+</body>
 
 </html>
