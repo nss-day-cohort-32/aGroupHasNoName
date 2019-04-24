@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Welcome to Nashville</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
@@ -36,7 +35,13 @@
             </div>
             <div id="concertFeatures">
                 <label>Concerts</label>
-                <select id="concertSelectionMenu"></select>
+                  <select id="concertSelectionMenu">
+                    <option value="none"></option>
+                    <option value="KnvZfZ7vAeA">Rock</option>
+                    <option value="KnvZfZ7vAv6">Country</option>
+                    <option value="KnvZfZ7vAv1">Hip-Hop/Rap</option>
+                    <option value="KnvZfZ7vAvl">Other</option>
+                  </select>
                 <button type="button" id="concertSearchBtn">Search Concerts</button>
             </div>
             <div id="restaurantFeatures">
@@ -54,7 +59,7 @@
                     <option value="171">Sushi</option>
                     <option value="471">Southwestern</option>
                 </select>
-                <button type="button" id="restaurantSearchBtn">Search Concerts</button>
+                <button type="button" id="restaurantSearchBtn">Search Restaurants</button>
             </div>
             <div id="meetupFeatures">
                 <label>Meetups</label>
@@ -77,11 +82,17 @@
                     <option value="118">Auto, Boat & Air</option>
                     <option value="119">Hobbies and Special Interest</option>
                 </select>
-                <button type="button" id="meetupSearchBtn">Search Concerts</button>
+                <button type="button" id="meetupSearchBtn">Search Meetups</button>
             </div>
         </div>
 
         <!-- ending search container div -->
+    <div id="resultsSection">
+      <h1>Search Results</h1>
+      <!-- beggining search results div -->
+      <div id="resultsContainer"></div>
+    </div>
+    <!-- ending seach results div -->
 
         <div id="resultsSection">
             <h1>Search Results</h1>
@@ -114,6 +125,7 @@
         <script src="scripts/apiTokens.js"></script>
         <script src="scripts/parkAPI.js"></script>
         <script src="scripts/meetupApi.js"></script>
+        <script src="scripts/concertsApi.js"></script>
         <script src="scripts/main.js"></script>
         <script src="scripts/restaurantAPI.js"></script>
 </body>
