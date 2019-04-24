@@ -1,4 +1,4 @@
 src/lib/node_modules
 .DS_Store
 .vscode
-scr/scrpits/apiTokens.js
+src/scripts/apiTokens.js
