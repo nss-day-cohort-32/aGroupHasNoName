@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
     <html>
     <head>
         <meta charset="utf-8" />
@@ -8,7 +8,10 @@
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-        <h1>Welcome to Nashville</h1>
+        <div class="top">
+            <span id="head">Welcome to Nashville</span>
+        </div>
+        <div class="cardContainer">
         <h2>Search for things todo......</h2>
 
         <!-- beggining search container div -->
@@ -32,8 +35,20 @@
             </div>
             <div id="restaurantFeatures">
                 <label>Restaurants</label>
-                <select id="restaurantSelectionMenu"></select>
-                <button type="button" id="restaurantSearchBtn">Search Concerts</button>
+                <select id="restaurantSelectionMenu">
+                    <option value="3">Asian</option>
+                    <option value="193">BBQ</option>
+                    <option value="268">Bar</option>
+                    <option value="168">Burger</option>
+                    <option value="192">Deli</option>
+                    <option value="55">Italian</option>
+                    <option value=“73”>Mexican</option>
+                    <option value="82">Pizza</option>
+                    <option value="141">Steakhouse</option>
+                    <option value="171">Sushi</option>
+                    <option value="471">Southwestern</option>
+                </select>
+                <button type="button" id="restaurantSearchBtn">Search Restaurants</button>
             </div>
             <div id="meetupFeatures">
                 <label>Meetups</label>
@@ -86,9 +101,10 @@
 
             </div>
         </div>
+    </div>
         <!-- beggining itinerary div -->
         <script src="scripts/apiTokens.js"></script>
-        <script src="scripts/meetupApi.js"></script>
         <script src="scripts/main.js"></script>
+        <script src="scripts/restaurantAPI.js"></script>
     </body>
     </html>
