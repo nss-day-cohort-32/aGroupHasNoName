@@ -2,3 +2,4 @@ src/lib/node_modules
 .DS_Store
 .vscode
 apiTokens.js
+src/scripts/apiTokens.js
