@@ -24,9 +24,9 @@ const meetupSearch = (id) => {
                 resultIndex++
             })
             //make an event listener for each search result button
-            const saveBtn = document.querySelectorAll('.meetupSaveBtn')
+            const saveBtn = document.querySelectorAll(".meetupSaveBtn")
             saveBtn.forEach(button => {
-                button.addEventListener('click', (event => {
+                button.addEventListener("click", (event => {
                     resultsToItinerary(event)
                 }))
             })
@@ -48,15 +48,15 @@ eventFactory = (event, index) => {
 }
 
 //take the value from the search option and pass it into the fetch call
-document.querySelector('#meetupSearchBtn').addEventListener('click', () => {
-    const categoryId = document.querySelector('#meetupSelectionMenu').value
+document.querySelector("#meetupSearchBtn").addEventListener("click", () => {
+    const categoryId = document.querySelector("#meetupSelectionMenu").value
     meetupSearch(categoryId)
-    document.querySelector('#resultsContainer').innerHTML = ""
+    document.querySelector("#resultsContainer").innerHTML = ""
 })
 
 //take the search results and put them in the results conatiner
 resultsToDom = result => {
-    let container = document.querySelector('#resultsContainer')
+    let container = document.querySelector("#resultsContainer")
     container.innerHTML += result
 }
 
@@ -64,7 +64,8 @@ resultsToDom = result => {
 resultsToItinerary = result => {
     let currentBtn = result.currentTarget
     let currentContainer = currentBtn.parentNode
-    let eventToSave = currentContainer.querySelector('.eachResult').innerHTML
-    const itineraryContainer = document.querySelector('#meetupItinerary')
+    let eventToSave = currentContainer.querySelector(".eachResult").innerHTML
+    const itineraryContainer = document.querySelector("#meetupItinerary")
+    itineraryContainer.id = "meetupItinerary"
     itineraryContainer.innerHTML = `Meetup: ${eventToSave}`
 }

@@ -55,6 +55,7 @@ function restaurantToItinerary (result) {
     let currentContainer = currentBtn.parentNode
     let restaurantToSave = currentContainer.querySelector(".eachResult").innerHTML
     const itineraryContainer = document.querySelector("#restaurantItinerary")
+    itineraryContainer.id = "resturantsItinerary"
     itineraryContainer.innerHTML = `Restaurant: ${restaurantToSave}`
 }
 

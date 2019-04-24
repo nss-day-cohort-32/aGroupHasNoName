@@ -69,5 +69,6 @@ concertSaveToDOM = event => {
   ).innerHTML;
   //Prints parkSaveSelected to innerHTML
   const concertSaveElement = document.querySelector("#concertItinerary");
-  concertSaveElement.innerHTML = "concert: " + concertSaveSelected;
+  concertSaveElement.id = "concertItinerary";
+  concertSaveElement.innerHTML = "Concert: " + concertSaveSelected;
 };

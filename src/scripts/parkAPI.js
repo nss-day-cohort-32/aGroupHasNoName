@@ -72,6 +72,7 @@ parkSaveToDOM = (event) => {
   let parkButtonContainer = parkCurrentButton.parentNode;
   //grabs innerHtml of Park Result To Save (name and address)
   let parkSaveSelected = parkButtonContainer.querySelector(".parkResultToSave").innerHTML;
+  parkSaveSelected.id = "#parkItinerary"
   //Prints parkSaveSelected to innerHTML
   const parkSaveElement = document.querySelector("#parkItinerary");
   parkSaveElement.innerHTML = "Park: " + parkSaveSelected;
