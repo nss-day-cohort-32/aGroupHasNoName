@@ -1,17 +1,19 @@
+<!DOCTYPE html>
+<html>
 
-    <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Welcome to Nashville</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
-    <body>
-        <div class="top">
-            <span id="head">Welcome to Nashville</span>
-        </div>
-        <div class="cardContainer">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Welcome to Nashville</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="top">
+        <span id="head">Welcome to Nashville</span>
+    </div>
+    <div class="cardContainer">
         <h2>Search for things todo......</h2>
 
         <!-- beggining search container div -->
@@ -52,7 +54,7 @@
                     <option value="171">Sushi</option>
                     <option value="471">Southwestern</option>
                 </select>
-                <button type="button" id="restaurantSearchBtn">Search Restaurants</button>
+                <button type="button" id="restaurantSearchBtn">Search Concerts</button>
             </div>
             <div id="meetupFeatures">
                 <label>Meetups</label>
@@ -78,11 +80,12 @@
                 <button type="button" id="meetupSearchBtn">Search Concerts</button>
             </div>
         </div>
+
         <!-- ending search container div -->
 
         <div id="resultsSection">
             <h1>Search Results</h1>
-        <!-- beggining search results div -->
+            <!-- beggining search results div -->
             <div id="resultsContainer">
 
             </div>
@@ -106,11 +109,12 @@
             </div>
         </div>
     </div>
+
         <!-- beggining itinerary div -->
         <script src="scripts/apiTokens.js"></script>
         <script src="scripts/parkAPI.js"></script>
         <script src="scripts/meetupApi.js"></script>
         <script src="scripts/main.js"></script>
         <script src="scripts/restaurantAPI.js"></script>
-    </body>
-    </html>
+</body>
+</html>
