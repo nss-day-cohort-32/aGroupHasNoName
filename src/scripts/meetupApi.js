@@ -6,7 +6,7 @@ const meetupSearch = (id) => {
     fetch(`https://www.eventbriteapi.com/v3/events/search/?location.address=nashville&categories=${id}`, {
         headers: {
             "Authorization": `Bearer ${meetupToken}`,
-            mode: "cors"
+            // mode: "cors"
         }
     })
         .then(results => results.json())

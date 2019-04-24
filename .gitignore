@@ -1,4 +1,8 @@
 src/lib/node_modules
 .DS_Store
 .vscode
+<<<<<<< HEAD
 src/scripts/apiTokens.js
+=======
+scr/scrpits/apiTokens.js
+>>>>>>> master
