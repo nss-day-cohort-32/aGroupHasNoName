@@ -4,12 +4,16 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Welcome to Nashville</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <h1>Welcome to Nashville</h1>
-    <h2>Search for things todo......</h2>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="top">
+        <span id="head">Welcome to Nashville</span>
+    </div>
+    <div class="cardContainer">
+        <h2>Search for things todo......</h2>
 
         <!-- beggining search container div -->
         <div id="searchContainer">
@@ -42,8 +46,20 @@
             </div>
             <div id="restaurantFeatures">
                 <label>Restaurants</label>
-                <select id="restaurantSelectionMenu"></select>
-                <button type="button" id="restaurantSearchBtn">Search Concerts</button>
+                <select id="restaurantSelectionMenu">
+                    <option value="3">Asian</option>
+                    <option value="193">BBQ</option>
+                    <option value="268">Bar</option>
+                    <option value="168">Burger</option>
+                    <option value="192">Deli</option>
+                    <option value="55">Italian</option>
+                    <option value=“73”>Mexican</option>
+                    <option value="82">Pizza</option>
+                    <option value="141">Steakhouse</option>
+                    <option value="171">Sushi</option>
+                    <option value="471">Southwestern</option>
+                </select>
+                <button type="button" id="restaurantSearchBtn">Search Restaurants</button>
             </div>
             <div id="meetupFeatures">
                 <label>Meetups</label>
@@ -66,13 +82,11 @@
                     <option value="118">Auto, Boat & Air</option>
                     <option value="119">Hobbies and Special Interest</option>
                 </select>
-                <button type="button" id="meetupSearchBtn">Search Concerts</button>
+                <button type="button" id="meetupSearchBtn">Search Meetups</button>
             </div>
         </div>
-    </div>
-    </div>
-    <!-- ending search container div -->
 
+        <!-- ending search container div -->
     <div id="resultsSection">
       <h1>Search Results</h1>
       <!-- beggining search results div -->
@@ -80,30 +94,39 @@
     </div>
     <!-- ending seach results div -->
 
+        <div id="resultsSection">
+            <h1>Search Results</h1>
+            <!-- beggining search results div -->
+            <div id="resultsContainer">
+
+            </div>
+        </div>
+        <!-- ending seach results div -->
+
+        <!-- beggining itinerary div -->
+        <div id="itineraryContainer">
+            <h1>Itinerary</h1>
+            <div id="parkItinerary">
+
+            </div>
+            <div id="concertItinerary">
+
+            </div>
+            <div id="restaurantItinerary">
+
+            </div>
+            <div id="meetupItinerary">
+
+            </div>
         </div>
     </div>
-    <!-- ending seach results div -->
 
-    <!-- beggining itinerary div -->
-    <div id="itineraryContainer">
-        <h1>Itinerary</h1>
-        <div id="parkItinerary">
-
-        </div>
-        <div id="concertItinerary">
-
-        </div>
-        <div id="restaurantItinerary">
-
-        </div>
-        <div id="meetupItinerary">
-
-        </div>
         <!-- beggining itinerary div -->
         <script src="scripts/apiTokens.js"></script>
         <script src="scripts/parkAPI.js"></script>
         <script src="scripts/meetupApi.js"></script>
-        <script src="/src/scripts/concertsApi.js"></script>
+        <script src="scripts/concertsApi.js"></script>
         <script src="scripts/main.js"></script>
-    </body>
-    </html>
+        <script src="scripts/restaurantAPI.js"></script>
+</body>
+</html>
