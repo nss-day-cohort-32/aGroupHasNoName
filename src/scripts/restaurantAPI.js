@@ -37,7 +37,7 @@ function restaurantsearch (cuisines) {
 
 function restaurantFactory (restaurant, counter) {
     return `<div class="restaurantResults">
-    <p>${counter}. <span class="eachResult">${restaurant.name}: ${restaurant.address}</span><button class="restuarantSaveBtn">SAVE</button></p>
+    <div class="first"><p>${counter}. <span class="eachResult">${restaurant.name}: ${restaurant.address}</span></div><button class="restuarantSaveBtn">SAVE</button></p>
     </div>
     `
 }

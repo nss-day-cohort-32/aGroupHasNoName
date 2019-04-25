@@ -50,8 +50,8 @@ parkResultsFactory = (parkFeature, parkResultsCounter) => {
   const location = JSON.parse(parkFeature.mapped_location.human_address);
   return ` 
   <div class="returnedParkSearch">
-  <section>${parkResultsCounter}. <span class="parkResultToSave">
-  ${parkFeature.park_name}: ${location.address}</span> 
+  <div class="first"><section>${parkResultsCounter}. <span class="parkResultToSave">
+  ${parkFeature.park_name}: ${location.address}</span></div> 
   <button type="button" class="saveParkSearchBtn">SAVE</button>
   </section>
   </div>

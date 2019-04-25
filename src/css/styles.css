@@ -134,6 +134,26 @@ h2 {
 
 }
 
+.restaurantResults, .returnedMeetupSearch, .returnedParkSearch, .returnedConcertSearch  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    contain: content;
+    margin-top: 10px;
+}
+
+.restaurantSaveBtn, .meetupSaveBtn, .saveParkSearchBtn, .concertSearchBtn {
+    justify-self: flex-end;
+    align-self: flex-end;
+    margin-left: 0;
+}
+
+.meetupSaveBtn {
+    position: relative;
+    left: 10
+}
+
 #itineraryContainer h1 {
     margin: auto;
 }
