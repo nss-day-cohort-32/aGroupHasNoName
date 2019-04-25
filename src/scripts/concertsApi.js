@@ -43,9 +43,10 @@ document.querySelector("#concertSearchBtn").addEventListener("click", () => {
 function concertResultFactory(event, index) {
   return `
     <div class="returnedConcertSearch">
-  <section>${index}. <span class="concertResultToSave">
+    <div class="first"><section>${index}. <span class="concertResultToSave">
 
-  ${event.name}: ${event.date}</span> 
+  ${event.name}: ${event.date}</span>
+  </div>
   <button type="button" class="concertSearchBtn">SAVE</button>
   </section>
   </div>`;
