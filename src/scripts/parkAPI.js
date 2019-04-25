@@ -76,4 +76,5 @@ parkSaveToDOM = (event) => {
   //Prints parkSaveSelected to innerHTML
   const parkSaveElement = document.querySelector("#parkItinerary");
   parkSaveElement.innerHTML = "Park: " + parkSaveSelected;
+  gloablItineraryButton();
 };

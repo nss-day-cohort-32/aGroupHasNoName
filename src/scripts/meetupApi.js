@@ -68,4 +68,5 @@ resultsToItinerary = result => {
     const itineraryContainer = document.querySelector("#meetupItinerary")
     itineraryContainer.id = "meetupItinerary"
     itineraryContainer.innerHTML = `Meetup: ${eventToSave}`
+    gloablItineraryButton();
 }
