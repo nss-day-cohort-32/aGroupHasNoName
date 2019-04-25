@@ -26,13 +26,13 @@ gloablItineraryButton = () => {
       itineraryButtonContainer.innerHTML =
         "<button type=\"button\" id=\"saveToJSONButton\">Save Itinerary</button>";
       document.querySelector("#saveToJSONButton").addEventListener(
-        "click",
+        "click", () => {
         postNewData("http://localhost:8088/Itinerary", {
           park: parkInfo,
           concert: concertInfo,
           resturant: resturantInfo,
           meetup: meetupInfo
         })
-      );
+      });
     }
   };
