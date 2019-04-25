@@ -13,7 +13,7 @@
         <span id="head">Welcome to Nashville</span>
     </div>
     <div class="cardContainer">
-        <h2>Search for things todo......</h2>
+        <h2>Search for things to do!</h2>
 
         <!-- beggining search container div -->
         <div id="searchContainer">
@@ -31,7 +31,7 @@
                     <option value="playground">Playground</option>
                     <option value="walk_jog_paths">Walking/Jogging Trails</option>
                 </select>
-                <button type="button" id="parkSearchBtn">Search Parks</button>
+                <button type="button" id="parkSearchBtn">SEARCH</button>
             </div>
             <div id="concertFeatures">
                 <label>Concerts</label>
@@ -42,11 +42,12 @@
                     <option value="KnvZfZ7vAv1">Hip-Hop/Rap</option>
                     <option value="KnvZfZ7vAvl">Other</option>
                   </select>
-                <button type="button" id="concertSearchBtn">Search Concerts</button>
+                <button type="button" id="concertSearchBtn">SEARCH</button>
             </div>
             <div id="restaurantFeatures">
                 <label>Restaurants</label>
                 <select id="restaurantSelectionMenu">
+                    <option value="none"></option>
                     <option value="3">Asian</option>
                     <option value="193">BBQ</option>
                     <option value="268">Bar</option>
@@ -59,7 +60,7 @@
                     <option value="171">Sushi</option>
                     <option value="471">Southwestern</option>
                 </select>
-                <button type="button" id="restaurantSearchBtn">Search Restaurants</button>
+                <button type="button" id="restaurantSearchBtn">SEARCH</button>
             </div>
             <div id="meetupFeatures">
                 <label>Meetups</label>
@@ -82,7 +83,7 @@
                     <option value="118">Auto, Boat & Air</option>
                     <option value="119">Hobbies and Special Interest</option>
                 </select>
-                <button type="button" id="meetupSearchBtn">Search Meetups</button>
+                <button type="button" id="meetupSearchBtn">SEARCH</button>
             </div>
         </div>
 
@@ -97,21 +98,22 @@
         <!-- beggining itinerary div -->
         <div id="itineraryContainer">
             <h1>Itinerary</h1>
-            <div id="parkItinerary">
+            <div id="itineraryBox">
+                <div id="parkItinerary">
 
-            </div>
-            <div id="concertItinerary">
+                </div>
+                <div id="concertItinerary">
 
-            </div>
-            <div id="restaurantItinerary">
+                </div>
+                <div id="restaurantItinerary">
 
-            </div>
-            <div id="meetupItinerary">
+                </div>
+                <div id="meetupItinerary">
 
+                </div>
             </div>
             <div id="saveItineraryContainer"></div>
         </div>
-    </div>
 
         <!-- beggining itinerary div -->
         <script src="scripts/apiTokens.js"></script>
