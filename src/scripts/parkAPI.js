@@ -52,7 +52,7 @@ parkResultsFactory = (parkFeature, parkResultsCounter) => {
   <div class="returnedParkSearch">
   <section>${parkResultsCounter}. <span class="parkResultToSave">
   ${parkFeature.park_name}: ${location.address}</span> 
-  <button type="button" class="saveParkSearchBtn">Save Park</button>
+  <button type="button" class="saveParkSearchBtn">SAVE</button>
   </section>
   </div>
   `;

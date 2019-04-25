@@ -42,7 +42,7 @@ eventFactory = (event, index) => {
 
     return `
     <div class="returnedMeetupSearch"
-    <p>${index}. <span class="eachResult">${event.name} on ${month}-${day}-${year} at ${time}</span> <button class="meetupSaveBtn">Save</button></p>
+    <p>${index}. <span class="eachResult">${event.name} on ${month}-${day}-${year} at ${time}</span> <button class="meetupSaveBtn">SAVE</button></p>
     </div>
     `
 }
