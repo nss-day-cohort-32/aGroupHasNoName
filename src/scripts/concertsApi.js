@@ -71,4 +71,5 @@ concertSaveToDOM = event => {
   const concertSaveElement = document.querySelector("#concertItinerary");
   concertSaveElement.id = "concertItinerary";
   concertSaveElement.innerHTML = "Concert: " + concertSaveSelected;
+  gloablItineraryButton();
 };
