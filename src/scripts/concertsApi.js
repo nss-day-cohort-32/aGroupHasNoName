@@ -46,7 +46,7 @@ function concertResultFactory(event, index) {
   <section>${index}. <span class="concertResultToSave">
 
   ${event.name}: ${event.date}</span> 
-  <button type="button" class="concertSearchBtn">Save Concert</button>
+  <button type="button" class="concertSearchBtn">SAVE</button>
   </section>
   </div>`;
 }

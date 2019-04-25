@@ -12,12 +12,11 @@ body {
     background-size: cover;
     position: relative;
     background-repeat: no-repeat;
-    background-position: 10% 700px;
+    background-position: 10% 400px;
     display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: column;
-
 }
 
 .top {
@@ -41,7 +40,7 @@ body {
     position: relative;
     background-image: linear-gradient(to bottom, transparent 0%, white 80%);
     top: 30px;
-    margin-top: 0px;
+    margin-top: -400px;
     margin-left: 0;
     height: 200px;
     width: 110%;
@@ -51,8 +50,8 @@ body {
 #head {
     margin-bottom: 50px;
     padding: 20px;
-    margin-top: 450px;
-    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 700px;
     text-align: center;
     height: 220px;
     width: auto;
@@ -68,13 +67,131 @@ body {
     display: flex;
     position: relative;
     border: 2px black solid;
-    width: 40%;
-    height: 500px;
+    width: 75%;
+    height: 1%;
     flex-direction: column;
     align-content: center;
-    justify-content: center;
+    justify-content: flex-start;
     border-radius: 2%;
-    bottom: 120px;
+    bottom: 240px;
     background: rgb(211, 211, 211, .75);
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    padding: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+h2 {
+    padding-top: 10px;
+    margin: auto;
+    position: aboslute;
+    top: -35px;
+    font-size: 60px;
+}
+
+#searchContainer, #resultsSection, #itineraryContainer {
+    margin: auto;
+    font-size: 30px;
+
+}
+
+#searchContainer {
+    align-items: flex-end;
+    margin-left: 313px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+#resultsSection h1 {
+    margin: auto;
+}
+
+#resultsSection {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+    position: relative;
+}
+
+#resultsContainer {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+#parkItinerary, #restaurantItinerary, #meetupItinerary, #concertItinerary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#parkItinerary div, #restaurantItinerary div, #meetupItinerary div, #concertItinerary div {
+    align-items: flex-start;
+
+
+}
+
+#itineraryContainer h1 {
+    margin: auto;
+}
+
+#itineraryContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+    position: relative;
+}
+
+
+
+#itineraryBox div {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardContainer h1 {
+    font-size: 45px;
+}
+
+#parkFeatures, #concertFeatures, #restaurantFeatures, #meetupFeatures {
+    position: relative;
+}
+
+select {
+    height: 30px;
+    font-size: 20px;
+    margin: 5px 20px;
+    width: 275px;
+
+}
+
+button {
+    margin-right: 230px;
+    height: 30px;
+    width: 70px;
+    border: solid black 1px;
+    border-radius: 10px;
+    background: rgb(47, 45, 45);
+    color: white;
+    font-weight: 500;
+}
+
+button:focus {
+    outline:0;
+}
+
+button:active {
+    background: white;
+    color: black;
+    font-weight: 600;
+}
+
+#resultsSection div, #itineraryContainer div {
+    font-size: 25px;
+    width: 100%;
+    white-space: nowrap;
 }
