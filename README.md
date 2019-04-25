@@ -6,7 +6,9 @@ ___
 ## Instructions for using the project locally
 1. Navigate to the directory in which you want Welcome to Nashville to reside
 1. Using your terminal, run ```git@github.com:nss-day-cohort-32/aGroupHasNoName.git```
-1. open the src/lib and  run ```npm install```
+1. Install ```npm install -g json-server```
+1. Navigate to the src/lib and  run ```npm install```
+1. In a new terminal tab, run the json server ```json-server --watch db.json```
 
 ### API Tokens/Keys
 1. Refer to the following links to sign up for each necessary token/key. 
